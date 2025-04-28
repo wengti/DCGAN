@@ -17,7 +17,7 @@ The code has been rewritten from scratch while maintaining the core concepts and
 - **infer.py**
   - A) **Sample**
       - Randomly create 100 samples from the latent space using the trained generator
-      - ![Generated Samples]('D:\PyTorch Implementation\DCGAN\result_MNIST_1\Generated Image.png')
+      - ![Generated Samples](D:\PyTorch Implementation\DCGAN\result_MNIST_1\Generated Image.png)
   - B) **Visualize Latent Space**
       - Randomly create 4 samples from the latent space using the trained generator and plot the interpolation between these 4 images
   - C) **Inverse GAN**
