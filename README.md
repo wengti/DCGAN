@@ -38,7 +38,7 @@ The code has been rewritten from scratch while maintaining the core concepts and
 
 ![Generated MNIST Samples](./result_display/MNIST/reconstruction.png)
 ![Generated MNIST_Color_Samples](./result_display/MNIST_color/reconstruction.png)
-![Generated Celeb_Samples](./result_display/Celeb/reconstruction.png)
+![Generated Celeb_Samples](./result_display/Celeb/Result_Reconstruction/reconstruction.png)
   
   - D) **Thin to Thick**
       - Transform b&w MNIST images that have thin strokes into MNIST images that have thick strokes
