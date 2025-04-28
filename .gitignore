@@ -1,0 +1,9 @@
+__pycache__
+img_align_celeba
+MNIST_test
+MNIST_train
+result_Celeb_1
+result_MNIST_1
+result_MNIST_color_1
+*.csv
+*.zip
