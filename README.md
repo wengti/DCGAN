@@ -25,6 +25,12 @@ The code has been rewritten from scratch while maintaining the core concepts and
 
   - B) **Visualize Latent Space**
       - Randomly create 4 samples from the latent space using the trained generator and plot the interpolation between these 4 images
+
+![Generated MNIST Samples](./result_display/MNIST/latent_space.png)
+![Generated MNIST_Color_Samples](./result_display/MNIST_color/latent_space.png)
+![Generated Celeb_Samples](./result_display/Celeb/latent_space.png)
+
+
   - C) **Inverse GAN**
       - Provide a set of images that are stored in {recon_dir}
       - The set of images are prepared into the form of BxCxHxW, range from -1 to 1, a torch tensor on cuda
