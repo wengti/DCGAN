@@ -604,7 +604,7 @@ def infer(mode):
     
     
     
-    # Visualize Celeve Latent Space
+    # Visualize Celeb Latent Space
     # Perform interpolation between 4 fixed inputs of celebrity images
     # Note: This mode is only compatible with models that are trained using Celeb
     elif mode == 'visualize_celeb_latent_space':
