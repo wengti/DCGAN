@@ -15,25 +15,25 @@ The code has been rewritten from scratch while maintaining the core concepts and
 - **engine.py** - Defines the train step (for 1 epoch).
 - **main.py** - Trains a DCGAN model.
 - **infer.py**
-  A) **Sample**
+  - A) **Sample**
       - Randomly create 100 samples from the latent space using the trained generator
-  B) **Visualize Latent Space**
+  - B) **Visualize Latent Space**
       - Randomly create 4 samples from the latent space using the trained generator and plot the interpolation between these 4 images
-  C) **Inverse GAN**
+  - C) **Inverse GAN**
       - Provide a set of images that are stored in {recon_dir}
       - The set of images are prepared into the form of BxCxHxW, range from -1 to 1, a torch tensor on cuda
       - The corresponding z input in the latent space for these images are then found and saved.
       - The comparison between the input and reconstruction images are saved (top row: Target images, bottom row: Reconstructed images).
-  D) **Thin to Thick**
+  - D) **Thin to Thick**
       - Transform b&w MNIST images that have thin strokes into MNIST images that have thick strokes
       - Note: This mode is only compatible with models that are trained using MNIST
-  E) **Red to Green**
+  - E) **Red to Green**
       - Transform Colorful MNIST images that are red into Colorful MNIST images that are green
       - Note: This mode is only compatible with models that are trained using MNIST_Color
-  F) **Visualize Celeb Latent Space**
+  - F) **Visualize Celeb Latent Space**
       - Perform interpolation between 4 fixed inputs of celebrity images
       - Note: This mode is only compatible with models that are trained using Celeb
-  G) **Smiling Woman to Smiling Man**
+  - G) **Smiling Woman to Smiling Man**
       - Perform the following operation of: smiling_woman - neutral_woman + neutral man
       - Resulting in an image of a smiling man
 
