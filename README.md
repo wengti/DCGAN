@@ -32,13 +32,19 @@ The code has been rewritten from scratch while maintaining the core concepts and
 
 
   - C) **Inverse GAN**
-      - Provide a set of images that are stored in {recon_dir}
-      - The set of images are prepared into the form of BxCxHxW, range from -1 to 1, a torch tensor on cuda
+      - A set of images are prepared into the form of BxCxHxW, range from -1 to 1, a torch tensor on cuda
       - The corresponding z input in the latent space for these images are then found and saved.
       - The comparison between the input and reconstruction images are saved (top row: Target images, bottom row: Reconstructed images).
+
+![Generated MNIST Samples](./result_display/MNIST/reconstruction.png)
+![Generated MNIST_Color_Samples](./result_display/MNIST_color/reconstruction.png)
+![Generated Celeb_Samples](./result_display/Celeb/reconstruction.png)
+  
   - D) **Thin to Thick**
       - Transform b&w MNIST images that have thin strokes into MNIST images that have thick strokes
       - Note: This mode is only compatible with models that are trained using MNIST
+
+
   - E) **Red to Green**
       - Transform Colorful MNIST images that are red into Colorful MNIST images that are green
       - Note: This mode is only compatible with models that are trained using MNIST_Color
