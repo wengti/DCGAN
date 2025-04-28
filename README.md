@@ -15,3 +15,15 @@ The code has been rewritten from scratch while maintaining the core concepts and
 - **engine.py** - Defines the train step (for 1 epoch).
 - **main.py** - Trains a DCGAN model.
 - **infer.py**
+  A) Sample - Randomly create 100 samples from the latent space using the trained generator
+  B) Visualize Latent Space - Randomly create 4 samples from the latent space using the trained generator and plot the interpolation between these 4 images
+  C) Inverse GAN
+       i) Provide a set of images that are stored in {recon_dir}
+      ii) The set of images are prepared into the form of BxCxHxW, range from -1 to 1, a torch tensor on cuda
+     iii) The corresponding z input in the latent space for these images are then found and saved.
+      iv) The comparison between the input and reconstruction images are saved (top row: Target images, bottom row: Reconstructed images).
+  D) Thin to Thick
+       i) Transform b&w MNIST images that have thin strokes into MNIST images that have thick strokes
+      ii) Note: This mode is only compatible with models that are trained using MNIST
+
+  
