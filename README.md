@@ -18,7 +18,8 @@ The code has been rewritten from scratch while maintaining the core concepts and
   - A) **Sample**
       - Randomly create 100 samples from the latent space using the trained generator
         
-![Generated Samples](./result_display/MNIST/Generated%20Image.png)
+![Generated MNIST Samples](./result_display/MNIST/Generated%20Image.png)
+![Generated MNIST_Color_Samples](./result_display/MNIST_Color/Generated%20Image.png)
 
   - B) **Visualize Latent Space**
       - Randomly create 4 samples from the latent space using the trained generator and plot the interpolation between these 4 images
